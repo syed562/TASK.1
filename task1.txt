@@ -1,0 +1,44 @@
+
+import java.util.*;
+public class task{
+    public static void main(String args[]){
+        int score=0;
+        int no_of_att=5;
+        //game
+        while(no_of_att>=1){
+        //create random number
+        Random r = new Random();
+        int r1 = r.nextInt(100);
+        // prompt user to enter their guess
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter your number");
+      int m =sc.nextInt();
+   
+       System.out.println("generated random number is"+" " +r1);
+       //comparison and feedback
+      if(m==r1){
+          System.out.println("user's guess and generated number are equal");
+          score=score+1;
+      }
+      else if (r1>m){
+           System.out.println("user's guess is less than generated number ");
+           
+      }
+      else{
+           System.out.println("user's guess is greater than generated number ");
+      }
+        
+     no_of_att--;
+        }
+        System.out.println("your score out of 5 is:"+" "+score);
+        
+    }
+}
+
+
+
+
+
+https://rzp.io/l/NareshITech 
+
+9154861173
